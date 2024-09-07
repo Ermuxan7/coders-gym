@@ -4,6 +4,7 @@ import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { RiMenu3Line } from "react-icons/ri";
 import { useState } from "react";
 import Slider from "./slider";
+import { NavbarMenu } from "../../mockData/data";
 // import { NavbarMenu } from "../../mockData/data";
 
 
@@ -19,13 +20,11 @@ const Navbar = () => {
                     <h2 className="font-bold tracking-wider">Coders <span className="text-orange-500 ">GYM</span></h2>
                 </a>
                 {/* Menu Section */}
-                <div className="hidden items-center gap-8 font-semibold text-base lg:flex">
-                    <a href="/" className="hover:text-orange-600">Home</a>
-                    <a href="#" className="hover:text-orange-600">Trainer</a>
-                    <a href="#" className="hover:text-orange-600">Program</a>
-                    <a href="#" className="hover:text-orange-600">Blogs</a>
-                    <a href="#" className="hover:text-orange-600">Pricing</a>
-                </div>
+                <ul className="hidden items-center gap-8 font-semibold text-base lg:flex">
+                    {NavbarMenu.map((item, index) =>(
+                        <li key={index} className="cursor-pointer hover:text-orange-500 hover:border-b-orange-300 hover:border-b-2">{item}</li>
+                    ))}
+                </ul>
                 {/* login Section */}
                 <div className="flex items-center gap-5 text-lg ">
                     <div className="p-3 text-xl rounded-full hover:text-white hover:bg-orange-400 duration-200"><FaSearch /></div>

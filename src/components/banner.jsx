@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = ({id, image, title, desc}) => {
     return (
-        <div className='flex items-center justify-center gap-8 mx-20 min-w-[480px] bg-[#F9F9F9] mb-32'>
+        <div className='flex items-center justify-center gap-8 mx-20 min-w-[480px] bg-[#F9F9F9] mb-20'>
             <div className='w-2/5'>
                 <img src={image} alt="girl-image"  />
             </div>

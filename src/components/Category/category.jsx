@@ -19,7 +19,7 @@ const Category = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8  ">
                 {filteredCards.map((card) =>(
-                    <div className="bg-slate-300 p-4 rounded-lg text-black">
+                    <div key={card.id} className="bg-slate-300 p-4 rounded-lg text-black">
                         <img src={card.image} alt="category-img" className="w-full h-60 rounded-md object-cover" />
                         <h2 className="my-2 text-xl font-bold">{card.title}</h2>
                         <p>{card.category}</p>

@@ -3,6 +3,8 @@ import Banner from "./components/banner"
 import Main from "./components/main"
 import Navbar from "./components/Navbar/navbar"
 import Offer from "./components/offer"
+import Testimional from "./components/Testimional"
+import Pricing from "./components/pricing"
 
 const categoryBtn = ['All', 'Yoga', 'Fitness' ,'Muscle']
 
@@ -29,6 +31,8 @@ const App = () => {
       <Banner {...BannerData} />
       <Category/>
       <Banner {...BannerData2} />
+      <Testimional />
+      <Pricing/>
     </>
   )
 }

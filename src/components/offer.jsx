@@ -12,17 +12,17 @@ const Offer = () => {
                 <p className='text-gray-500'>It is a long established fact that a <br /> reader readable.</p>
             </div>
             <div className='flex gap-6  '>
-                <div className='p-6 bg-gray-200 rounded-md hover:bg-white hover:shadow-neutral-500 hover:shadow-lg'>
+                <div className='px-8 py-6 bg-gray-200 rounded-md hover:bg-white hover:shadow-neutral-500 hover:shadow-lg'>
                     <MdOutlineSportsKabaddi className='text-3xl' />
                     <h4 className='my-2 font-bold text-xl '> Yoga Equipments</h4>
                     <p className='text-gray-500'>It is a long established fact that a <br /> reader readable.</p>
                 </div>
-                <div className='p-6 bg-gray-200 rounded-md hover:bg-white hover:shadow-neutral-500 hover:shadow-lg'>
+                <div className='px-8 py-6 bg-gray-200 rounded-md hover:bg-white hover:shadow-neutral-500 hover:shadow-lg'>
                     <FaDumbbell className='text-3xl'/>
                     <h4 className='my-2 font-bold text-xl'>Muscle Equipments</h4>
                     <p className='text-gray-500'>It is a long established fact that a <br /> reader readable.</p>
                 </div>
-                <div className='p-6 bg-gray-200 rounded-md hover:bg-white hover:shadow-neutral-500 hover:shadow-lg'>
+                <div className='px-8 py-6 bg-gray-200 rounded-md hover:bg-white hover:shadow-neutral-500 hover:shadow-lg'>
                     <GiGymBag className='text-3xl'/>
                     <h4 className='my-2 font-bold text-xl'>Fitness Equipments</h4>
                     <p className='text-gray-500'>It is a long established fact that a <br /> reader readable.</p>

@@ -7,8 +7,8 @@ const Testimional = () => {
         arrow: false,
         autoplay: true,
         // autoplaySpeed: 500,
-        cssEase: "linear",
-        speed: 500,
+        cssEase: "ease-in",
+        speed: 700,
         pauseOnHover: true,
         infinite: true,
         slidesToShow: 3,
@@ -23,21 +23,18 @@ const Testimional = () => {
             <div className="overflow-hidden my-10">
                 <Slider {...setting}>
                     {TestimonialsData.map((data) =>(
-                        <div key={data.id}>
-                            <div className="px-4 my-6">
-                                <div className="  bg-purple-100 rounded-md p-4 shadow-lg shadow-slate-600 cursor-pointer">
-                                    <div className="flex items-center gap-4 px-4 py-2">
-                                        <img src={data.img} alt="" className="w-16 rounded-full" />
-                                        <h3 className="text-xl font-bold">{data.name}</h3>
-                                    </div>
-                                    <div className="px-4 pb-4">
-                                        <p className="text-gray-600 pb-3">{data.text}</p>
-                                        <p>⭐⭐⭐⭐⭐</p>
-                                    </div>
+                        <div key={data.id} className="px-4 my-6">
+                            <div className="  bg-purple-100 rounded-md p-4 shadow-lg shadow-slate-600 cursor-pointer">
+                                <div className="flex items-center gap-4 px-4 py-2">
+                                    <img src={data.img} alt="" className="w-16 rounded-full" />
+                                    <h3 className="text-xl font-bold">{data.name}</h3>
+                                </div>
+                                <div className="px-4 pb-4">
+                                    <p className="text-gray-600 pb-3">{data.text}</p>
+                                    <p>⭐⭐⭐⭐⭐</p>
                                 </div>
                             </div>
                         </div>
-
                     ))}
                 </Slider>
             </div>

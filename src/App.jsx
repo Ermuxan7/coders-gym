@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/navbar"
 import Offer from "./components/offer"
 import Testimional from "./components/Testimional"
 import Pricing from "./components/pricing"
+import Footer from "./components/footer"
 
 const categoryBtn = ['All', 'Yoga', 'Fitness' ,'Muscle']
 
@@ -33,6 +34,7 @@ const App = () => {
       <Banner {...BannerData2} />
       <Testimional />
       <Pricing/>
+      <Footer/>
     </>
   )
 }
